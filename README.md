@@ -16,4 +16,6 @@
 
 执行`npm run build`打包dmg格式文件
 
-具体指令查看`package.json`
+执行`npm run build:win`打包exe格式文件
+
+具体查看`package.json`
