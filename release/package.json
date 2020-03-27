@@ -1,0 +1,70 @@
+{
+  "name": "release",
+  "version": "1.0.0",
+  "description": "这是一个独立的Electron项目",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win64": "electron-builder --win --x64",
+    "rebuild": "electron-rebuild -f -w yourmodule"
+  },
+  "author": "xry",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.0.7",
+    "electron-builder": "^22.4.1",
+    "electron-rebuild": "^1.10.1"
+  },
+  "build": {
+    "productName": "helloWorld",
+    "appId": "com.demo.yxr",
+    "dmg": {
+      "contents": [
+        {
+          "x": 410,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 150,
+          "type": "file"
+        }
+      ]
+    },
+    "directories": {
+      "output": "outdir"
+    },
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "icon": "build/icon_512.ico",
+      "target": [
+        {
+          "target": "DMG",
+          "arch": "x64"
+        }
+      ]
+    },
+    "win": {
+      "icon": "build/icon_512.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": "x64"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}
