@@ -13,6 +13,7 @@ sh init.sh
 
 // 2、直接命令安装
 // 执行两遍 npm i 命令，分别root目录、release目录
+cd </root>
 npm i
 cd release
 npm i
@@ -23,6 +24,7 @@ npm i
 将生成`dist文件夹`，为接下来的`打包exe和dmg应用程序`做准备
 ````
 // 项目根目录下执行脚本
+cd </root>
 npm run build
 ````
 
