@@ -36,6 +36,7 @@ npm run build
 **注意：所有打包操作都是在`/release文件夹`下进行的**
 
 以下是打包涉及到的一些指令：
+>必须保证是在`/release`下
 ````
 // 查看应用程序运行效果
 npm run start
