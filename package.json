@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "rm -rf ./release/dist \n vue-cli-service build",
-    "build:ele": "rm -rf ./release/dist \n vue-cli-service build \n cd release \n npm run start"
+    "build": "vue-cli-service build",
+    "build:ele": "vue-cli-service build \n cd release \n npm run start"
   },
   "dependencies": {
     "core-js": "^3.6.4",
