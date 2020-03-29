@@ -39,10 +39,12 @@ npm run build
 npm run start
 
 // 打包dmg格式文件
+// 强烈建议在macOS系统下执行该命令
 npm run build
 
 // 打包exe格式文件
 // 此处默认配置的是window-x64，如有其他需求请自行添加指令
+// 强烈建议在window系统下执行该命令
 npm run build:win64
 ````
 
